@@ -1,0 +1,23 @@
+package student;
+
+
+public class Student {
+
+  int id;
+    String name;
+    double cgpa;
+    Student(int a, String b, double c){
+        id=a;
+        name=b;
+        cgpa=c;
+    }
+    void display(){
+        System.out.println("ID"+id);
+        System.out.println("NAME"+name);
+        System.out.println("CGPA"+cgpa);
+    }
+    public static void main(String[] args) {
+        Student asraful=new Student(1019, "Asrafu", 3.40); 
+        asraful.display();
+    }
+}
